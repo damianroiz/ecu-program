@@ -1,0 +1,50 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    fieldset {
+        display: grid;
+        grid-template-columns: 8rem 20rem;
+        grid-auto-flow: column;
+        align-items: center;
+        border: none;
+        padding-block: 0.95rem;
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            align-items: start;
+            padding-bottom: 0;
+        }
+        .errorMsg {
+            color: var(--c-red-100);
+            margin-left: 2.4rem;
+        } 
+    }
+    label {
+        border: none;
+        color: var(--c-white-600);
+        font: 400 1.4rem/1em 'Rubik', sans-serif;
+    }
+    input, textarea {
+        border-radius: 3px;
+        padding: 0.8rem 1.2rem;
+        background-color: var(--c-white-100);
+        &:active, &:focus {
+        outline: 2px solid var(--c-indigo-200);
+        outline-offset: 4px;
+        }
+    }
+    textarea {
+    height: 10rem;
+    font: 400 var(--f-link) 'rubik' sans-serif var(--c-indigo-200); 
+    }
+    button {
+        position: relative;
+        align-self: end;
+        margin-top: 1.5rem;
+        grid-column: 2 / 3;
+        justify-self: end;
+    }
+}

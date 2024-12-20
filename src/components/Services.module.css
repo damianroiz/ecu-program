@@ -1,0 +1,55 @@
+.serviceSection {
+  padding-block: 10rem;
+  background: no-repeat center center/cover url(../assets/sevices-bg.webp), var(--c-bg-linear-gradient);
+  background-blend-mode: soft-light;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.serviceCard {
+  padding: 5rem;
+  width: 680px;
+  min-width: 480px;
+  height: 440px;
+  background-blend-mode: darken;
+  background: no-repeat center/cover;
+  margin: 50px;
+  position: relative;
+  color: var(--c-white-600);
+    > h2 {
+      position: absolute;
+      top: -10%;
+      left: -5%;
+      padding: 0.8rem 5rem 0.8rem 1.5rem;
+      background: var(--c-red-300);
+      font-size: 1.9rem;
+    }
+    >ul {
+      position: absolute;
+      width: 90%;
+      bottom: -4%;
+      left: 14%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      justify-content: flex-end;
+      > li {
+        padding: 0.2rem 0.5rem;
+        background: rgba(0,0,0, 0.5);
+        font: small-caps 1.1rem/1.2em 'Rubik';
+        text-wrap: balance;
+        &:hover {
+          background: var(--c-green-500);
+        }
+      }
+    }
+    h2, ul > li {
+        letter-spacing: 1.1px;
+        font-style: italic;
+        transform: skewx(-12deg);
+    }
+  }
+  

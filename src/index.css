@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Reddit+Mono:wght@200..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root{
+  
+  /* Indigo */
+  --c-indigo-100: #e0e7ff;
+  --c-indigo-200: #c7d2fe;
+  --c-indigo-300: #6366f1;
+  --c-indigo-400: #4f46e5;
+  --c-indigo-500: #4338ca;
+  --c-indigo-600: #3730a3;
+  --c-indigo-700: #312e81;
+  
+  /* whites */
+  --c-white-700: #FFF;
+  --c-white-600: #FDFEFE;
+  --c-white-500: #FCFCFC;
+  --c-white-400: #FAFBFB;
+  --c-white-300: #F9F9F9;
+  --c-white-200: #F7F8F8;
+  --c-white-100: #F3F4FD;
+  
+  /* grey */
+  --c-grey-100: #e5e5e5;
+  --c-grey-200: #d2d2d2;
+  --c-grey-300: #d6d6d6;
+  --c-grey-400: #9ca3af;
+  --c-grey-500: #6b7280;
+  --c-grey-600: #4b5563;
+  --c-grey-700: #374151;
+  
+  /*black*/
+  --c-black-100: #3d3d55;
+  --c-black-200: #323245;
+  --c-black-300: #292939;
+  --c-black-400: #212131;
+  --c-black-500: #191925;
+  --c-black-600: #0d0d12;
+  --c-black-700: #040406;
+
+  /*blue*/
+  --c-blue-100: #6373FF;
+  --c-blue-200: #2F43FF;
+  --c-blue-300: #152DFF;
+  --c-blue-400: #0019FB;
+  --c-blue-500: #0017E2;
+  --c-blue-600: #0014C9;
+  --c-blue-700: #0012B0;
+
+  /*red*/
+  --c-red-100: #e60026;
+  --c-red-200: #D50024;
+  --c-red-300: #C50021;
+  --c-red-400: #B4001E;
+  --c-red-500: #A4001B;
+  --c-red-600: #940019;
+  --c-red-700: #830016;
+
+  /*green*/
+  --c-green-100: #00FF00;
+  --c-green-200: #00E600;
+  --c-green-300: #00CC00;
+  --c-green-400: #00B300;
+  --c-green-500: #009B00;
+  --c-green-600: #008300;
+  --c-green-700: #007800;
+
+  --f-h1: 600 2.1rem 'Inter', sans-serif;
+  --f-h2: 500 1.7rem 'Inter', sans-serif;
+  --f-h3: 500 1.3rem 'Inter', sans-serif;
+  --f-paragraph: 400 1.2rem/1.7em "PT Serif", serif;
+  --f-link: 400 1rem/1.5em 'Rubik', sans-serif;
+  --f-button: 400 1.1rem/1.5em 'Reddit Mono', sans-serif;
+
+  --c-linear-gradient: linear-gradient(16deg, rgba(0,0,0,1) 0%, rgba(23,33,81,1) 75%, rgba(48, 25, 52,1) 100%);
+  --border: 0.25rem solid var(--c-blue-400);
+
+/*shadows */
+--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+--shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.3);
+--shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.4);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+html, body {
+  width: 100vw;
+  background: var(--c-black-600);
+  font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3, p {
+  color: var(--c-white-600);
+}
+
+h1 {
+  font: var(--f-h1);
+}
+
+h2 {
+  font: var(--f-h2);
+}
+
+p {
+ font: var(--f-paragraph);
+}
+
+ul,
+ol, menu {
+  list-style: none;
+  text-decoration: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+  font: var(--f-link);
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+}
+
+button, button:active {
+  border: none;
+  cursor: pointer
+}
+
+button:has(svg) {
+  line-height: 0;
+}
+
+
+input:focus,
+button:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--color-indigo-600);
+  outline-offset: -1px;
+}
+
+img { 
+display: block;
+}
+
+section {
+  display: block;
+}
+
+
+
