@@ -6,7 +6,7 @@
   margin-block: 9rem;
   /* padding: 2.5rem 12vw 10rem 4rem; */
   background: center / cover no-repeat
-      url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.carthrottle.com%2Fworkspace%2Fuploads%2Fmemes%2Ftoyota_supra_shop_engine_tunin-5524224059cb7.jpg&f=1&nofb=1&ipt=52406c3a3a3acf31d4bf017a62b61c078135d2aeb784435d24c9dbb222370ea1&ipo=images),
+      url(./about-background.webp),
     var(--c-linear-gradient);
   background-blend-mode: overlay;
   filter: grayscale(18%);
