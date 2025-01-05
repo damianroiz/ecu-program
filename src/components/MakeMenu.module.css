@@ -1,5 +1,5 @@
 .makeMenuContainer {
-  background: center / cover no-repeat url('../assets/main-background.jpg') rgb(102, 86, 164);
+  background: center / cover no-repeat url('./main-background.jpg') rgb(102, 86, 164);
   background-blend-mode: hard-light;
   filter: contrast(95%);
   display: flex;

@@ -1,10 +1,10 @@
 import styles from './BrandBanner.module.css';
-import BurgerMotorsports from '../assets/brands/burger-motorsports.webp';
-import CtsTurbo from '../assets/brands/cts_turbo.webp';
-import HandR from '../assets/brands/h-and-r.webp';
-import Vr from '../assets/brands/logo_vr.webp';
+import BurgerMotorsports from '/burger-motorsports.webp';
+import CtsTurbo from '/cts_turbo.webp';
+import HandR from '/h-and-r.webp';
+import Vr from '/logo_vr.webp';
 
-function Brand(src) {
+function Brand({ src }) {
   return (
     <div>
       <img src={src} alt="" />
