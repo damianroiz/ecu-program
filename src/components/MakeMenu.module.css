@@ -1,6 +1,5 @@
 .makeMenuContainer {
-  background: center / cover no-repeat url('./main-background.webp')
-    rgb(102, 86, 164);
+  background: rgb(102, 86, 164) url('/main-background.webp') center / cover no-repeat;
   background-blend-mode: hard-light;
   filter: contrast(95%);
   display: flex;

@@ -6,7 +6,7 @@
   margin-block: 9rem;
   /* padding: 2.5rem 12vw 10rem 4rem; */
   background: center / cover no-repeat
-      url(./about-background.webp),
+      url(/about-background.webp),
     var(--c-linear-gradient);
   background-blend-mode: overlay;
   filter: grayscale(18%);
