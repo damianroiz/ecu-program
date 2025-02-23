@@ -41,8 +41,8 @@ const carsInventory = [
             <a>Make</a>
             <menu className={styles.make}>
                 {carsInventory.map((car, index) => (
-                  <li>
-                  <a key={index}>{car.make}</a>
+                  <li key={index}>
+                  <a>{car.make}</a>
                   <menu className={styles.model}>
                     {car.model.map((model, index) => 
                      (<li key={index}><a>{model}</a></li>)
