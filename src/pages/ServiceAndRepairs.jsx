@@ -1,5 +1,3 @@
-import React from 'react'
-
 function ServiceAndRepairs() {
     return (
         <section style={{margin: '0 auto'}}>

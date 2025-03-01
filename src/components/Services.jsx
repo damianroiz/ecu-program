@@ -1,5 +1,4 @@
 import styles from './Services.module.css';
-import PropTypes from 'prop-types';
 
 const service = [
   {
@@ -14,7 +13,7 @@ const service = [
       'Fuel Economy',
       'Dyno services',
     ],
-    img: 'url(./tuning.webp)',
+    img: 'url(/tuning.webp)',
   },
   {
     title: 'Service & Repair',
@@ -28,13 +27,13 @@ const service = [
       'Transmission Repair',
       'Performance Part Upgrades',
     ],
-    img: 'url(./repair.webp)',
+    img: 'url(/repair.webp)',
   },
 ];
 
-const { tuning, repair } = service;
+const [tuning, repair] = service;
 
-function ServiceCard({ title, backgroundImage, ser }) {
+function ServiceCard({ title, backgroundImage, service }) {
   return (
     <div
       className={styles.serviceCard}
@@ -44,7 +43,7 @@ function ServiceCard({ title, backgroundImage, ser }) {
     >
       <h2>{title}</h2>
       <ul>
-        {service.map((ser, i) => (
+        {service.type.map((service, i) => (
           <li key={i}>{service}</li>
         ))}
       </ul>
@@ -58,12 +57,12 @@ export default function Services() {
       <ServiceCard
         title={tuning.title}
         backgroundImage={tuning.img}
-        ser={tuning}
+        service={tuning}
       />
       <ServiceCard
         title={repair.title}
         backgroundImage={repair.img}
-        ser={repair}
+        service={repair}
       />
     </div>
   );

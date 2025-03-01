@@ -8,7 +8,7 @@ function Home() {
         <>
         <MakeMenu />
         <About />
-        {/* <Services /> */}
+        <Services />
         <BrandBanner />
         </>
     )
