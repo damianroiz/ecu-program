@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import styled from 'styled-components';
 
 const StyledLayout = styled.div`
@@ -20,7 +20,7 @@ function BaseLayout() {
         <div style={{placeContent: 'center', width: '100%', textAlign: "center"}}>
          <Outlet />
          </div>
-        <Footer />
+        {/* <Footer /> */}
         </StyledLayout>
     )
 }

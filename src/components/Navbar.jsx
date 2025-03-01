@@ -1,14 +1,14 @@
-import {NavLink} from 'react-router-dom'
-import { RiShoppingCartLine } from "https://esm.sh/react-icons/ri";
-import { IoSearchSharp } from "https://esm.sh/react-icons/io5";
-import styles from './Navbar.module.css'
-import Logo from "../ui/Logo";
+import { NavLink } from 'react-router-dom';
+import { RiShoppingCartLine } from 'react-icons/ri';
+import { IoSearchSharp } from 'react-icons/io5';
+import styles from './Navbar.module.css';
+import Logo from '../ui/Logo';
 
 function Navbar() {
-    return (
-      <header>
+  return (
+    <header>
       <nav className={styles.nav}>
-          <Logo className={'logo'} />
+        <Logo className={'logo'} />
         <menu>
           <li>
             <NavLink to="/home">Home</NavLink>
@@ -47,11 +47,8 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      </header>
-    );
-  }
+    </header>
+  );
+}
 
-  export default Navbar;
-
-
-
+export default Navbar;
