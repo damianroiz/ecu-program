@@ -1,4 +1,5 @@
 import styles from './Services.module.css';
+import PropTypes from 'prop-types';
 
 const service = [
   {
@@ -31,9 +32,9 @@ const service = [
   },
 ];
 
-const [tuning, repair] = service;
+const { tuning, repair } = service;
 
-function ServiceCard({ title, backgroundImage, service }) {
+function ServiceCard({ title, backgroundImage, ser }) {
   return (
     <div
       className={styles.serviceCard}
@@ -43,7 +44,7 @@ function ServiceCard({ title, backgroundImage, service }) {
     >
       <h2>{title}</h2>
       <ul>
-        {service.type.map((service, i) => (
+        {service.map((ser, i) => (
           <li key={i}>{service}</li>
         ))}
       </ul>
@@ -57,12 +58,12 @@ export default function Services() {
       <ServiceCard
         title={tuning.title}
         backgroundImage={tuning.img}
-        service={tuning}
+        ser={tuning}
       />
       <ServiceCard
         title={repair.title}
         backgroundImage={repair.img}
-        service={repair}
+        ser={repair}
       />
     </div>
   );

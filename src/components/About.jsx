@@ -20,12 +20,12 @@ function About() {
           dyno services in-house, saving you time and hassle.
         </p>
         <p>
-          Whether you're looking for parts upgrade and install, a custom
+          Whether you&pos;re looking for parts upgrade and install, a custom
           tune for your diesel engine or a simple ECU clone, our team of
           experienced technicians is here to help. With our commitment to
-          quality and customer service, you can be confident that you're
-          getting the best possible tuning experience. So, if you're
-          looking for in-house tuning services in Calgary, look no further than
+          quality and customer service, you can be confident that you&pos;re
+          getting the best possible tuning experience. So, if you&pos;re looking
+          for in-house tuning services in Calgary, look no further than
           ecuprogram.
         </p>
         <p>
