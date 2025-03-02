@@ -24,7 +24,7 @@ function ContactForm() {
 
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
-            <Fieldset label={'name'} error={'wrong entry'}>
+            <Fieldset label={'name'} error={''}>
                 <input type="text" id="name" name="name" required />
             </Fieldset>
             <Fieldset label={'e-mail'}>
